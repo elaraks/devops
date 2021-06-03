@@ -5,6 +5,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "timemap-bucket" {
   bucket = var.bucket-name
+  region=
   cors_rule {
     allowed_headers = ["*"]
     allowed_methods = ["GET"]
